@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script src="https://kit.fontawesome.com/1f7457abdb.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    
+    <title>Gestion de Budget</title>
+</head>
+<body>
+    <div class="app">
+        <h1> Gestion de Budget</h1>
+         <div class="balance-container">
+             <h2> Solde </h2>
+             <div id="icon-bal"><i class="fa-solid fa-piggy-bank"></i></div>
+             <div id="balance">300 000 FCFA</div>
+         </div>
+         <div class="cashflow-container">
+             <div class="revenu-container">
+                 <h2>Revenus</h2>
+                 <div id="icon-rev"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                 <div id="revenus">250 000 FCFA</div>
+             </div>
+             
+             <div class="depenses-container">
+                 
+                 <h2>Dépenses</h2>
+                 <div id="icon-dep"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                 <div id="depenses">100 000 FCFA</div>
+
+             </div>
+         </div>
+
+         <div class="transaction-container">
+            <h2>Historique des Transactions</h2>
+            <ul  id="transaction">
+             
+            </ul>
+
+         </div>
+
+         <div class="form-container">
+             <h2>Ajouter une transaction </h2>
+             <form onsubmit="return false;">
+                 <label for="name">Titre : </label>
+                 <input id="name" type="text">
+                 <label for="montant">Montant : </label>
+                 <input id ="montant" type="number">
+                 
+             </form>
+             <div class="btn">
+                
+                <button id="revenu-btn">Ajouter Revenus</button>
+                <button id="depense-btn">Ajouter Dépenses</button>
+            </div>
+         </div>
+
+
+    </div>
+    
+    <script src="script.js"></script>
+  
+</body>
+</html>
