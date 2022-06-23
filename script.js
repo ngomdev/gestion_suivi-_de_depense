@@ -181,7 +181,7 @@ function rendu(){
    
       btnEl.appendChild(iconEl);
 
-      btnEl.addEventListener('click', onUpdateClick);
+   
     
       containerEl.appendChild(btnEl);
   
